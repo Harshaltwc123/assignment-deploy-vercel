@@ -2,9 +2,13 @@ import React, { useState } from "react";
 import { IoSearch } from "react-icons/io5";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import { Link, useLocation } from "react-router-dom";
+import Signin from "./Signin";
+import Signup from "./Signup";
 
 function Navbar1() {
   const [isOpen, setIsOpen] = useState(false);
+  const [signinOpen, setSigninOpen] = useState(false);
+  const [signupOpen, setSignupOpen] = useState(false);
   const location = useLocation();
   return (
     <>
@@ -78,14 +82,46 @@ function Navbar1() {
             </li>
             <ul className="flex gap-2">
               <li>
-                <button className="bg-black text-white px-4 py-1 rounded-lg font-medium">
+                <button
+                  onClick={() => setSigninOpen(true)}
+                  className="bg-black text-white px-4 py-1 rounded-lg font-medium"
+                >
                   SIGN IN
                 </button>
+                {signinOpen && (
+                  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                    <div className="bg-white p-6 rounded-lg shadow-lg w-96">
+                      <Signin />
+                      <button
+                        onClick={() => setSigninOpen(false)}
+                        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                )}
               </li>
               <li>
-                <button className="bg-black text-white px-4 py-1 rounded-lg font-medium">
+                <button
+                  onClick={() => setSignupOpen(true)}
+                  className="bg-black text-white px-4 py-1 rounded-lg font-medium"
+                >
                   SIGN UP
                 </button>
+                {signupOpen && (
+                  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                    <div className="bg-white p-6 rounded-lg shadow-lg w-96">
+                      <Signup />
+                      <button
+                        onClick={() => setSignupOpen(false)}
+                        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                )}
               </li>
             </ul>
           </ul>
@@ -157,14 +193,46 @@ function Navbar1() {
             </li>
             <ul className="flex gap-2">
               <li>
-                <button className="bg-black text-white px-4 py-1 rounded-lg font-medium">
+                <button
+                  onClick={() => setSigninOpen(true)}
+                  className="bg-black text-white px-4 py-1 rounded-lg font-medium"
+                >
                   SIGN IN
                 </button>
+                {signinOpen && (
+                  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                    <div className="bg-white p-6 rounded-lg shadow-lg w-96">
+                      <Signin />
+                      <button
+                        onClick={() => setSigninOpen(false)}
+                        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                )}
               </li>
               <li>
-                <button className="bg-black text-white px-4 py-1 rounded-lg font-medium">
+                <button
+                  onClick={() => setSignupOpen(true)}
+                  className="bg-black text-white px-4 py-1 rounded-lg font-medium"
+                >
                   SIGN UP
                 </button>
+                {signupOpen && (
+                  <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+                    <div className="bg-white p-6 rounded-lg shadow-lg w-96">
+                      <Signup />
+                      <button
+                        onClick={() => setSignupOpen(false)}
+                        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                )}
               </li>
             </ul>
           </ul>
