@@ -3,6 +3,7 @@ import img1 from "../assets/Strategic.png";
 import img2 from "../assets/Technology.png";
 import img3 from "../assets/Investment.png";
 import img4 from "../assets/Ecosystem.png";
+import { Link } from "react-router-dom";
 
 function Guide() {
   return (
@@ -24,7 +25,9 @@ function Guide() {
                 them define their vision, strategy, and roadmap for succeeding
                 their goals
               </p>
-              <button className="underline text-xs pb-2 pt-5">Read more</button>
+              <Link to="/strategic">
+              <button className="underline text-xs pb-2 pt-9">Read more</button>
+              </Link>
             </div>
             {/* card2 */}
             <div className="flex flex-col items-center mt-10 bg-zinc-800 shadow-xl shadow-purple-600 p-4 max-w-64 rounded-xl">
@@ -35,14 +38,17 @@ function Guide() {
                 ideas into scalable solutions offering a suitable technical
                 assistance to product development and implementation.
               </p>
+              <Link to="/technology">
               <button className="underline text-xs pb-2 pt-5">Read more</button>
+              </Link>
+
             </div>
           </div>
           <div className="flex justify-center flex-wrap gap-12">
             {/* card3 */}
             <div className="flex flex-col items-center mt-10 bg-zinc-800 shadow-xl shadow-purple-600 p-4 max-w-64 rounded-xl">
               <img src={img3} alt="" className="py-5" />
-              <h1 className="font-bold text-lg pb-2">
+              <h1 className="font-bold text-lg pb-2 ">
                 Investment Opportunities
               </h1>
               <p className="text-xs pb-2">
@@ -50,7 +56,9 @@ function Guide() {
                 investment opportunities for startups with promising ideas and
                 growth potential.
               </p>
-              <button className="underline text-xs pb-2 pt-5">Read more</button>
+              <Link to="/investment">
+              <button className="underline text-xs pb-2 pt-9">Read more</button>
+              </Link>
             </div>
             {/* card4 */}
             <div className="flex flex-col items-center mt-10 bg-zinc-800 shadow-xl shadow-purple-600 p-4 max-w-64 rounded-xl">
@@ -61,7 +69,9 @@ function Guide() {
                 ecosystem by collaborating with accelerators, incubators,
                 venture capital firms, and government agencies.
               </p>
-              <button className="underline text-xs pb-2 pt-5">Read more</button>
+              <Link to="/ecosystem">
+              <button className="underline text-xs pb-2 pt-4">Read more</button>
+              </Link>
             </div>
           </div>
         </div>

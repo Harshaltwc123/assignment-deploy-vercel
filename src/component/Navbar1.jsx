@@ -12,7 +12,7 @@ function Navbar1() {
   const location = useLocation();
   return (
     <>
-      <nav className="bg-white px-9 border-b shadow-lg fixed top-0 left-0 right-0">
+      <nav className="bg-white px-9 border-b shadow-lg fixed top-0 left-0 right-0 z-10">
         <ul className="flex justify-between items-center">
           <div className="flex flex-col gap-0 text-2xl">
             <Link to="/">
