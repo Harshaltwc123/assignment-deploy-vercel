@@ -1,12 +1,12 @@
 import React from 'react'
 import Landing from '../component/Landing'
+import Guide from '../component/Guide'
 
 function Home() {
   return (
     <div>
-      <h1>
         <Landing/>
-      </h1>
+        <Guide/>
     </div>
   )
 }

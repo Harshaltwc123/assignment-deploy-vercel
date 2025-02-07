@@ -38,21 +38,21 @@ function Footer() {
 
           <ul className="w-full sm:w-1/2 md:w-1/4 lg:w-1/6">
             <li className="font-bold mb-2">Learn More</li>
-            <li className="text-sm mb-1 hover:text-gray-600 cursor-pointer">Career</li>
-            <li className="text-sm mb-1 hover:text-gray-600 cursor-pointer">Browse</li>
-            <li className="text-sm mb-1 hover:text-gray-600 cursor-pointer">Service</li>
-            <li className="text-sm mb-1 hover:text-gray-600 cursor-pointer">Events</li>
+            <li className="text-sm mb-2 hover:text-gray-600 cursor-pointer">Career</li>
+            <li className="text-sm mb-2 hover:text-gray-600 cursor-pointer">Browse</li>
+            <li className="text-sm mb-2 hover:text-gray-600 cursor-pointer">Services</li>
+            <li className="text-sm mb-2 hover:text-gray-600 cursor-pointer">Events</li>
           </ul>
 
           <ul className="w-full sm:w-1/2 md:w-1/4 lg:w-1/6">
             <li className="font-bold mb-2">Privacy and Legal</li>
-            <li className="text-sm mb-1 hover:text-gray-600 cursor-pointer">Privacy Policy</li>
-            <li className="text-sm mb-1 hover:text-gray-600 cursor-pointer">Governance</li>
-            <li className="text-sm mb-1 hover:text-gray-600 cursor-pointer">Cookie Notice</li>
+            <li className="text-sm mb-2 hover:text-gray-600 cursor-pointer">Privacy Policy</li>
+            <li className="text-sm mb-2 hover:text-gray-600 cursor-pointer">Governance</li>
+            <li className="text-sm mb-2 hover:text-gray-600 cursor-pointer">Cookie Notice</li>
           </ul>
 
           <ul className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
-            <li className="font-bold text-lg mb-3">Connect with Us</li>
+            <li className="font-bold text-xl mb-3">Connect with Us</li>
             <ul className="flex gap-4 mb-6">
               <li>
                 <img
@@ -99,8 +99,8 @@ function Footer() {
           </ul>
         </div>
 
-        <hr className="w-[95%] mx-auto font-bold bg-black text-black" />
-        <div className="text-center mt-4 text-sm">
+        {/* <hr className="w-[95%] mx-auto font-bold bg-black text-black" /> */}
+        <div className="text-center mt-4 text-sm border-t  border-gray-800 py-2 w-[96%] items-center mx-auto">
           © 2024 Hubnex. All rights reserved.
         </div>
       </footer>
