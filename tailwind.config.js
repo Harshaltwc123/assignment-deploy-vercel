@@ -6,12 +6,14 @@ export default {
   ],
   theme: {
     extend: {
-      // screens: {
-      //   sm: "300px",
-      //   md: "768px",
-      //   lg: "1024px",
-      //   xl: "1280px",
-      // },
+      screens: {
+        ms: "300px",
+        xs: "489px",
+        sm: "660px",
+        md: "780px",
+        // lg: "1024px",
+        // xl: "1280px",
+      },
     },
     
   },

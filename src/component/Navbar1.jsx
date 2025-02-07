@@ -12,7 +12,7 @@ function Navbar1() {
   const location = useLocation();
   return (
     <>
-      <nav className="bg-white px-9 border-b shadow-lg">
+      <nav className="bg-white px-9 border-b shadow-lg fixed top-0 left-0 right-0">
         <ul className="flex justify-between items-center">
           <div className="flex flex-col gap-0 text-2xl">
             <Link to="/">
@@ -94,7 +94,7 @@ function Navbar1() {
                       <Signin />
                       <button
                         onClick={() => setSigninOpen(false)}
-                        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                        className="mt-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
                       >
                         Close
                       </button>
@@ -115,7 +115,7 @@ function Navbar1() {
                       <Signup />
                       <button
                         onClick={() => setSignupOpen(false)}
-                        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                        className="mt-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
                       >
                         Close
                       </button>
@@ -205,7 +205,7 @@ function Navbar1() {
                       <Signin />
                       <button
                         onClick={() => setSigninOpen(false)}
-                        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                        className="mt-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
                       >
                         Close
                       </button>
@@ -226,7 +226,7 @@ function Navbar1() {
                       <Signup />
                       <button
                         onClick={() => setSignupOpen(false)}
-                        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+                        className="mt-4 px-4 py-2 bg-green-500 text-white rounded hover:bg-green-600"
                       >
                         Close
                       </button>
