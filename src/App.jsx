@@ -6,6 +6,7 @@ import Whatweoffer from "./pages/Whatweoffer";
 import Aboutus from "./pages/Aboutus";
 import Hubnexeducate from "./pages/Hubnexeducate";
 import Getintouch from "./pages/Getintouch";
+import Footer from "./component/Footer";
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
         <Route path="/hubnexeducate" element={<h1 className="text-center mt-10"><Hubnexeducate/></h1>} />
         <Route path="/getintouch" element={<h1 className="text-center mt-10"><Getintouch/></h1>} />
       </Routes>
+      <Footer/>
     </Router>
     
     </>
