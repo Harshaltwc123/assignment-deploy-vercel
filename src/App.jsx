@@ -11,6 +11,7 @@ import Strategic from "./component/Strategic";
 import Technology from "./component/Technology";
 import Investment from "./component/Investment";
 import Ecosystem from "./component/Ecosystem";
+import Search from "./component/Search";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         <Route path="/aboutus" element={<h1 className="text-center mt-10"><Aboutus/></h1>} />
         <Route path="/hubnexeducate" element={<h1 className="text-center mt-10"><Hubnexeducate/></h1>} />
         <Route path="/getintouch" element={<h1 className="text-center mt-10"><Getintouch/></h1>} />
+        <Route path="/search" element={<h1 className="text-center mt-10"><Search/></h1>} />
         <Route path="/strategic" element={<h1 className="text-center mt-10"><Strategic/></h1>} />
         <Route path="/technology" element={<h1 className="text-center mt-10"><Technology/></h1>} />
         <Route path="/investment" element={<h1 className="text-center mt-10"><Investment/></h1>} />

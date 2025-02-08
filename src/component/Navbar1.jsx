@@ -78,7 +78,9 @@ function Navbar1() {
               </Link>
             </li>
             <li>
+              <Link to="/search">
               <IoSearch className="h-6 w-9" />
+              </Link>
             </li>
             <ul className="flex gap-2">
               <li>
