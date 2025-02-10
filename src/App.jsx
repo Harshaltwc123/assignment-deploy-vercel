@@ -12,6 +12,7 @@ import Technology from "./component/Technology";
 import Investment from "./component/Investment";
 import Ecosystem from "./component/Ecosystem";
 import Search from "./component/Search";
+import ScrollToTop from "./component/ScrollToTop";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
     </Router> */}
 
     <Router>
+    <ScrollToTop/>
       <Navbar1 />
       <Routes>
         <Route path="/" element={<h1 className="text-center mt-10"><Home/></h1>} />

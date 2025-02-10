@@ -7,6 +7,7 @@ import Mission from '../component/Mission'
 import Invest from '../component/Invest'
 import Faq from '../component/Faq'
 import Scroll from '../component/Scroll'
+import Contactform from '../component/Contactform'
 
 
 function Home() {
@@ -20,6 +21,7 @@ function Home() {
         <Mission/>
         <Invest/>
         <Faq/>
+        <Contactform/>
         
     </div>
   )
